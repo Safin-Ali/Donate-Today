@@ -78,6 +78,31 @@ h1 {
 
 
 /* ---------------------------
+     Hover Effect Start
+---------------------------- */
+
+a:hover.common_color {
+    transition: 0.3s ease-in-out;
+    background: #00C89A;
+}
+
+button:hover.common_color {
+    transition: 0.3s ease-in-out;
+    background: #00C89A;
+}
+
+.donate_amount_list li:hover{
+    color: #ff5959;
+    border: 2px solid #ff5959;
+    background: #ff595925;
+}
+
+/* ---------------------------
+     Hover Effect End
+---------------------------- */
+
+
+/* ---------------------------
         Top Banner Start
 ---------------------------- */
 
@@ -103,6 +128,7 @@ h1 {
 }
 
 .top_banner a {
+    display: inline-block;
     padding: 10px;
     border-radius: 5px;
 }
@@ -140,6 +166,7 @@ h1 {
 .donate_amount_list {
     list-style: none;
 }
+
 .donate_amount_list li {
     width: 135px;
     height: 123px;
@@ -227,3 +254,49 @@ h1 {
 /* ---------------------------
     Our Donate Plan End
 ---------------------------- */
+
+
+/* ---------------------------
+        Blog Post Start
+---------------------------- */
+
+.blog-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.blog_text {
+    flex-basis: 50%;
+}
+
+.blog_text h1 {
+    font-size: 45px;
+}
+
+.blog_text p {
+    margin: 20px auto;
+    font-size: 18px;
+}
+
+.blog_text a {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.blog_image {
+    display: block;
+    margin: 0px 10%;
+}
+
+.blog_image:nth-child(1) {
+    display: block;
+    margin: 0;
+    margin-right: 10%;
+}
+
+.blog_image img {
+    max-width: 350px;
+}
