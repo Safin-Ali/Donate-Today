@@ -1,8 +1,18 @@
+/* ---------------------------
+    Font Import CDN Start
+---------------------------- */
+
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
 
 /* ---------------------------
-    Default Style Code Start
+    Font Import CDN End
 ---------------------------- */
+
+
+/* ---------------------------
+    Universal Style Start
+---------------------------- */
+
 *,
 *::before,
 *::after {
@@ -11,6 +21,15 @@
     text-decoration: none;
 }
 
+/* ---------------------------
+    Universal Style End
+---------------------------- */
+
+
+/* ---------------------------
+    Default Style Code Start
+---------------------------- */
+
 html,
 body {
     font-family: 'Merriweather', serif;
@@ -18,17 +37,43 @@ body {
     color: #707070;
 }
 
-h1{
+h1 {
     color: #121212;
 }
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* ---------------------------
+    Default Style Code End
+---------------------------- */
+
+
+/* ---------------------------
+    Color Class  Start
+---------------------------- */
 
 .common_color {
     color: #ffffff;
     background: #0BDC8D;
 }
 
+.food {
+    background: #c8d6e540;
+}
+
+.shelter {
+    background: #ff767540;
+}
+
+.medicine {
+    background: #f5cd7940;
+}
+
 /* ---------------------------
-    Default Style Code End
+    Color Class  End
 ---------------------------- */
 
 
@@ -58,7 +103,7 @@ h1{
 }
 
 .top_banner a {
-    padding: 10px 10px;
+    padding: 10px;
     border-radius: 5px;
 }
 
@@ -66,28 +111,33 @@ h1{
         Top Banner End
 ---------------------------- */
 
+
 /* ---------------------------
     Donate Payment Start
 ---------------------------- */
 
-.donate_area{
+.donate_area {
     margin: 100px auto;
 }
 
-.child_donate_area{
+.child_donate_area,
+.plan_area {
     padding: 0% 20%;
     text-align: center;
 }
 
-.child_donate_area h1{
+.child_donate_area h1,
+.plan_area h1 {
     font-size: 48px;
 }
-.child_donate_area > p{
+
+.child_donate_area>p,
+.plan_area>p {
     margin: 20px auto;
     padding: 0 5%;
 }
 
-.donate_amount_list{
+.donate_amount_list {
     width: 135px;
     height: 123px;
     background: #fafafa;
@@ -97,15 +147,77 @@ h1{
     position: relative;
     border-radius: 5px;
 }
-.active_color{
+
+.active_color {
     color: #ff5959;
     border: 2px solid #ff5959;
     background: #ff595925;
 }
-.donate_amount_list p{
+
+.donate_amount_list p {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-size: 30px;
 }
+
+/* ---------------------------
+    Donate Payment End
+---------------------------- */
+
+
+/* ---------------------------
+    Input Payment Start
+---------------------------- */
+
+.other_amount input {
+    border: none;
+    border-bottom: 2px solid #dadada;
+    outline: none;
+    width: 95%;
+    padding: 0px 0px 15px;
+    font-size: 18px;
+    text-align: center;
+    color: #121212;
+}
+
+.other_amount button {
+    font-size: 20px;
+    border: none;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ---------------------------
+    Input Payment End
+---------------------------- */
+
+/* ---------------------------
+    Our Donate Plan Start
+---------------------------- */
+
+.plan_box {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.plan_content {
+    margin: 5% 0;
+    margin-right: 30px;
+    padding: 40px 20px 20px 20px;
+    border-radius: 5px;
+    color: #141414;
+}
+
+.plan_content h1 {
+    font-size: 24px;
+    margin: 25px auto;
+}
+
+/* ---------------------------
+    Our Donate Plan End
+---------------------------- */
