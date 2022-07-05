@@ -138,6 +138,9 @@ h1 {
 }
 
 .donate_amount_list {
+    list-style: none;
+}
+.donate_amount_list li {
     width: 135px;
     height: 123px;
     background: #fafafa;
@@ -146,15 +149,18 @@ h1 {
     margin-right: 15px;
     position: relative;
     border-radius: 5px;
+    list-style: none;
+    cursor: pointer;
 }
 
 .active_color {
     color: #ff5959;
     border: 2px solid #ff5959;
-    background: #ff595925;
+    background: #ff595925 !important;
 }
 
 .donate_amount_list p {
+    font-weight: bold;
     position: absolute;
     left: 50%;
     top: 50%;
