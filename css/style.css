@@ -110,14 +110,43 @@ button:hover.common_color {
 ---------------------------- */
 
 
+/* --------------------------------
+    Multiple Class Select Start
+----------------------------------*/
+
+.child_donate_area,
+.plan_area,
+.subscription_header {
+    padding: 0% 20%;
+    text-align: center;
+}
+
+.child_donate_area h1,
+.plan_area h1,
+.subscription_header h1 {
+    font-size: 48px;
+}
+
+.child_donate_area>p,
+.plan_area>p,
+.subscription_header>p {
+    margin: 20px auto;
+    padding: 0 5%;
+}
+
+/* --------------------------------
+    Multiple Class Select End
+----------------------------------*/
+
+
 /* ---------------------------
-        Top Banner Start
+        Top Header Start
 ---------------------------- */
 
 .top_header {
     width: 100%;
     min-height: 570px;
-    background: linear-gradient(to top, #00000090, #00000040), url(../images/donation3.jpg) no-repeat center;
+    background: linear-gradient(to top, #000000, #00000020), url(../images/donation3.jpg) no-repeat center;
     background-size: cover;
     color: #fff;
     display: flex;
@@ -152,26 +181,6 @@ button:hover.common_color {
 
 .donate_area {
     margin: 100px auto;
-}
-
-.child_donate_area,
-.plan_area,
-.subscription_header {
-    padding: 0% 20%;
-    text-align: center;
-}
-
-.child_donate_area h1,
-.plan_area h1,
-.subscription_header h1 {
-    font-size: 48px;
-}
-
-.child_donate_area>p,
-.plan_area>p,
-.subscription_header>p {
-    margin: 20px auto;
-    padding: 0 5%;
 }
 
 .donate_amount_list {
